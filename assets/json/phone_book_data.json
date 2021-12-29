@@ -1,0 +1,14 @@
+[
+    {
+        "fullName" : "Trương Viết Lũy",
+        "phoneNumber": "0787048500",
+        "address": "Huế",
+        "region": "Việt Nam"
+    }, 
+    {
+        "fullName" : "Lê Văn Hiếu",
+        "phoneNumber": "0123456789",
+        "address" : "Huế",
+        "region":"Việt Nam"
+    }
+]
