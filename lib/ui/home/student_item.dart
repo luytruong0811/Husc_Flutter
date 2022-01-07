@@ -92,22 +92,6 @@ class _PhoneBookItemState extends State<PhoneBookItem> {
     );
   }
 
-  Widget _buildRichText(BuildContext context,
-      {required String text, required String highlightText}) {
-    return RichText(
-      text: TextSpan(
-        text: text,
-        style: AppTextStyle.regularBlack1A,
-        children: [
-          TextSpan(
-            text: highlightText,
-            style: AppTextStyle.mediumBlack1A,
-          )
-        ],
-      ),
-    );
-  }
-
   Widget _buildButton(
       BuildContext context, String label, void Function()? onPressed,
       {Color color = AppColor.colorGreen}) {

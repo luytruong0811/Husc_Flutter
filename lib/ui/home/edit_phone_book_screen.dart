@@ -144,22 +144,6 @@ class _EditPhoneBookScreenState extends State<EditPhoneBookScreen> {
     );
   }
 
-  Widget _buildRichText(BuildContext context,
-      {required String text, required String highlightText}) {
-    return RichText(
-      text: TextSpan(
-        text: text,
-        style: AppTextStyle.regularBlack1A.copyWith(fontSize: 16.0),
-        children: [
-          TextSpan(
-            text: highlightText,
-            style: AppTextStyle.mediumBlack1A.copyWith(fontSize: 16.0),
-          )
-        ],
-      ),
-    );
-  }
-
   Widget _saveButton(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(16.0),
