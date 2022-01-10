@@ -4,7 +4,7 @@ import 'package:final_exam/models/phone_book.dart';
 import 'package:final_exam/models/user.dart';
 import 'package:final_exam/ui/auth/login_screen.dart';
 import 'package:final_exam/ui/home/add_phone_book_screen.dart';
-import 'package:final_exam/ui/home/student_item.dart';
+import 'package:final_exam/ui/home/phone_book_item.dart';
 import 'package:final_exam/utils/app_color.dart';
 import 'package:final_exam/utils/app_dialog.dart';
 import 'package:final_exam/utils/app_text_style.dart';
@@ -37,11 +37,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: CircularProgressIndicator(),
               );
             }
-            if (snapshot.hasError) {
-              return Center(
-                child: Text('Đã có lỗi xảy ra.'),
-              );
-            }
+            // if (snapshot.hasError) {
+            //   return Center(
+            //     child: Text('Đã có lỗi xảy ra.'),
+            //   );
+            // }
             return StreamBuilder<List<PhoneBook>>(
                 stream: _homeBloC.listPhoneBooksStream,
                 initialData: snapshot.data,
