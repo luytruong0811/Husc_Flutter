@@ -189,7 +189,7 @@ class _EditPhoneBookScreenState extends State<EditPhoneBookScreen> {
   }
 
   void updatePhoneBook() {
-    WidgetsBinding.instance?.focusManager.primaryFocus?.unfocus();
+    WidgetsBinding.instance.focusManager.primaryFocus?.unfocus();
     _editBloC.updatePhoneBook().then((success) {
       HomeBloC.getInstance().getListPhoneBook();
       showCupertinoDialog(

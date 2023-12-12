@@ -120,6 +120,7 @@ class _PhoneBookItemState extends State<PhoneBookItem> {
       },
     ).then((acceptDelete) {
       if (acceptDelete ?? false) {
+        // ignore: body_might_complete_normally_catch_error
         HomeBloC.getInstance().deletePhoneBook(phoneBook).catchError((error) {
           ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(content: Text(StringUtil.stringFromException(error))));

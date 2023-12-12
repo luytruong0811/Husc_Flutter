@@ -193,7 +193,7 @@ class _AddPhoneBookScreenState extends State<AddPhoneBookScreen> {
   }
 
   void addPhoneBook() {
-    WidgetsBinding.instance?.focusManager.primaryFocus?.unfocus();
+    WidgetsBinding.instance.focusManager.primaryFocus?.unfocus();
     _addPhoneBookBloC.addPhoneBook().then((sucess) {
       HomeBloC.getInstance().getListPhoneBook();
       showCupertinoDialog(
